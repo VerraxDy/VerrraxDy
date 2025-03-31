@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1,0" />
+        <title>happy level up</title>
+        <style>
+            body,
+            html {
+                margin: 0;
+                padding: 0;
+                width: 100%;
+                height: 100%;
+                font-family: Arial, sans-serif;
+                background: #F0EBE3;
+                display: flex;
+                justify-content: center;
+                align-items: center;  
+            }
+
+            .container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                width: 100%;
+            }
+
+            .image-box {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 200px;
+                height: 200px;
+                border-radius: 15px;
+                overflow: hidden;
+            }
+
+            .image-box img {
+                max-width: 100%;
+                max-height: 100%;
+                object-fit: scale-down; 
+                display: block;
+            }
+
+            .title {
+                font-size: 36px;
+                font-weight: bold;
+                color: #1560bd;
+                margin: 20px 0;
+                text-align: center;
+                text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+            }
+
+            .message {
+                font-size: 16px;
+                color: #333;
+                text-align: center;
+                padding: 20px;
+                background-color: rgba(255, 255, 255, 0.7);
+                border-radius: 15px;
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+                line-height: 1.6;
+                max-width: 90%;
+                margin: 10px;
+            }
+
+            .message {
+                margin-bottom: 20px;
+            }
+
+            .message p {
+                margin: 10px 0;
+            }
+
+            .button-container {
+                display: flex;
+                justify-content: center;
+                gap: 20px;
+                margin-top: 20px;
+            }
+
+            .yes-button {
+                background-color: #1560bd;
+                color: white;
+                font-size: 20px;
+                font-weight: bold;
+                padding: 12px 30px;
+                border: none;
+                border-radius: 25px;
+                cursor: pointer;
+                text-align: center;
+                transition: background-color 0.3s;
+                min-width: 120px;
+                text-decoration: none;
+                display: inline-block;
+            }
+
+            .yes-button:hover {
+                background-color: #0e4a91;
+            }
+        </style>
+    </head>
+    <body>
+        <audio autoplay loop>
+            <source src="birthdaysong.mp3" type="audio/mpeg" />
+            Your browser does not support the audio element.
+        </audio>
+        <div class="container">
+            <div class="image-box">
+                <img src="yes.jpg" alt="yes" />
+            </div>
+            <div class="title">Happy Birthday</div>
+
+            <div class="message">
+                <p>cie makin tua aja, gimana kabar kamu di hari ulang tahun ini</p>
+                <p>mungkin ada cerita yang perlu diceritain? kalau ada apa apa cerita aja ya gausah sungkan sungkan</p>
+                <p>semoga dengan bertambahnya umur kamu, semoga kamu jadi menjadi diri yang lebih baik lagi yaa</p>
+                <p>aku mau bilang makasih ya karena udah sempet nemenin hari hari sebelumnya yang pernah kita jalani</p>
+                <p>semoga kuliahmu lancar, dan semoga hari harimu selalu bahagia</p>
+                <p>karena habis lebaran juga aku mau maaf juga yaa</p>
+                <p>minta maaf kalau aku ada salah baik di sengaja atauapun ngga di sengaja</p>
+                <p>maaf juga karena aku pernah nuduh kamu yang engga engga</p>
+                <p>hehe jadi banyak minta maaaf</p>
+                <p>makasih karena kebaikan kamu yang kemarin baik ke aku ataupun sama keluarga</p>
+                <p>thank u for being the best person in my life</p>
+                    <p>dan kamu berhak mendapatkan timbal balik yang lebih baik</p>
+            </div>
+
+            <a href="index.html" class="yes-button">Yes</a>
+
+            <button class="yes-button" onclick="window.location.href='index.html'">Return</button>
+        </div>
+    </body>
+</html>
